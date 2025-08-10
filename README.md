@@ -8,7 +8,7 @@ This is a fully responsive landing page for a fictional digital agency named "AT
 
 ### 📸 Screenshot
 
-![AT Digital Landing Page Screenshot](./screenshot.png) 
+![AT Digital Landing Page Screenshot](https://github.com/karindragimhan49/AtDigital/blob/edb012f7d84c9b93c0209f18d5077635e1b2465f/atdigital/public/home.png) 
 
 
 ---
@@ -69,5 +69,6 @@ Make sure you have Node.js and npm installed on your machine.
 ---
 
 ## 📂 Folder Structure
+
 
 A brief overview of the project's folder structure:
