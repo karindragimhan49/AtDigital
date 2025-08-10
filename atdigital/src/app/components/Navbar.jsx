@@ -1,15 +1,14 @@
-"use client"; // State පාවිච්චි කරන නිසා මේක අනිවාර්යයි!
+"use client"; 
 
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const Navbar = () => {
-  // Mobile menu එක open ද close ද කියලා බලාගන්න state එකක්
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-[#4f46e5] relative"> {/* 'relative' class එක අලුතින් එකතු කළා */}
+    <nav className="bg-[#4f46e5] relative"> 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -24,7 +23,7 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Desktop Menu (ලොකු screen වලට විතරයි) */}
+          {/* Desktop Menu  */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               <Link href="/services" className="text-white uppercase font-semibold text-sm tracking-wider hover:text-gray-200 px-3 py-2">
@@ -42,10 +41,10 @@ const Navbar = () => {
             </div>
           </div>
 
-          {/* Hamburger Menu Button (පොඩි screen වලට විතරයි) */}
+          {/* Hamburger Menu Button*/}
           <div className="-mr-2 flex md:hidden">
             <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)} // Button එක click කරාම state එක toggle වෙනවා
+              onClick={() => setIsMenuOpen(!isMenuOpen)} 
               type="button"
               className="bg-indigo-700 inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-indigo-600 focus:outline-none"
               aria-controls="mobile-menu"
@@ -61,7 +60,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu (isMenuOpen true නම් විතරයි පේන්නේ) */}
+      {/* Mobile Menu*/}
       {isMenuOpen && (
         <div className="md:hidden" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
